@@ -22,10 +22,14 @@ public class Paiement {
     @Column(name = "id")
     private Long idPaiement;
 
+    private BigDecimal montant;
+
     private LocalDate datePaiement;
 
     @Enumerated(EnumType.STRING)
     private ModePaiement modePaiement;
 
-    private BigDecimal montant;
+    @ManyToOne
+    @JoinColumn(name = "contrat_id")
+    private Contrat contrat;
 }
