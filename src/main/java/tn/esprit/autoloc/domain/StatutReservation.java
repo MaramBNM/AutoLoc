@@ -1,4 +1,4 @@
-package tn.esprit.autoloc.entity;
+package tn.esprit.autoloc.domain;
 
 public enum StatutReservation {
     EN_ATTENTE,
